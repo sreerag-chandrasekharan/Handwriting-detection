@@ -29,9 +29,10 @@ The project uses the MNIST dataset, a widely used dataset for digit recognition 
 
 ## Model Architecture
 The model is built using a simple neural network architecture. Here's a brief description:
-- **Input Layer**: Takes a 28x28 pixel image, flattened into a 784-dimensional vector.
-- **Hidden Layers**: One or more fully connected layers with ReLU activation.
-- **Output Layer**: A single neuron with a sigmoid activation for binary classification.
+- **Input Layer**: Takes an input vector of shape `(400,)`.
+- **First Hidden Layer (`layer1`)**: A dense layer with 25 units and a `sigmoid` activation function.
+- **Second Hidden Layer (`layer2`)**: A dense layer with 15 units and a `sigmoid` activation function.
+- **Output Layer (`layer3`)**: A single neuron with a `sigmoid` activation function, suitable for binary classification.
 
 Alternatively, convolutional neural network (CNN) layers can be added to improve accuracy on complex data.
 
